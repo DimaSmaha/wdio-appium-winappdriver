@@ -1,6 +1,10 @@
 class StandartCalculator {
+  // async getNumberBtn(number) {
+  //   return $(`//*[@AutomationId="num${number}Button"]`);
+  // }
+
   async getNumberBtn(number) {
-    return $(`//*[@AutomationId="num${number}Button"]`);
+    return $(`~num${number}Button`);
   }
 
   async clickNumberBtn(number) {
