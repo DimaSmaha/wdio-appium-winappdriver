@@ -31,8 +31,12 @@ class HomeScreen {
     await this.chooseDiskBtn.click();
   }
 
+  // get languageBtn() {
+  //   return $("//*[@RuntimeId='[2A.D0680.4.80000001.D0680.FFFFFFFC.5]']");
+  // }
+
   get languageBtn() {
-    return $("//*[@RuntimeId='[2A.D0680.4.80000001.D0680.FFFFFFFC.5]']");
+    return $("id=[2A.D0680.4.80000001.D0680.FFFFFFFC.5]");
   }
 
   async clickLanguageBtn() {
