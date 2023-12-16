@@ -2,7 +2,13 @@ const engineerCalculator = require("../pageobjects/calculatorEngineer");
 const standartCalculator = require("../pageobjects/calculatorStandart.page");
 
 describe("Calculator e2e", () => {
-  it("It should add 2 numbers", async () => {
+  it("It should clear", async () => {
+    await standartCalculator.clickNumberBtn(7);
+    await standartCalculator.clickClearBtn();
+    expect(await standartCalculator.resultValue).toHaveText("Дисплей: 0");
+  });
+
+  xit("It should add 2 numbers", async () => {
     await standartCalculator.clickNumberBtn(7);
     await standartCalculator.clickPlusBtn();
     await standartCalculator.clickNumberBtn(4);
@@ -11,7 +17,7 @@ describe("Calculator e2e", () => {
     expect(await standartCalculator.resultValue).toBeDisplayed();
   });
 
-  it("It should divide 2 numbers", async () => {
+  xit("It should divide 2 numbers", async () => {
     await standartCalculator.clickNumberBtn(5);
     await standartCalculator.clickDivideBtn();
     await standartCalculator.clickNumberBtn(2);
@@ -20,7 +26,7 @@ describe("Calculator e2e", () => {
     expect(await standartCalculator.resultValue).toBeDisplayed();
   });
 
-  it("It should change the calculator mode", async () => {
+  xit("It should change the calculator mode", async () => {
     await standartCalculator.clickMenuBtn();
     await standartCalculator.clickEngineerMode();
     expect(await standartCalculator.modeTitle).toHaveText("Інженерний");

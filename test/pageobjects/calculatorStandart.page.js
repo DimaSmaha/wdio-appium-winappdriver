@@ -50,6 +50,15 @@ class StandartCalculator {
   async clickEngineerMode() {
     await this.engineerModeBtn.click();
   }
+
+  get clearBtn() {
+    // return $(`//Button[@Name="Очистити"]`);
+    return $(`//*[@Name="Очистити"]`);
+  }
+
+  async clickClearBtn() {
+    await this.clearBtn.click();
+  }
 }
 
 module.exports = new StandartCalculator();
