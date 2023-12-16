@@ -26,6 +26,30 @@ class StandartCalculator {
   get resultValue() {
     return $('//*[@AutomationId="CalculatorResults"]');
   }
+
+  get divideBtn() {
+    return $('//*[@AutomationId="divideButton"]');
+  }
+
+  async clickDivideBtn() {
+    await this.divideBtn.click();
+  }
+
+  get menuBtn() {
+    return $('//*[@AutomationId="TogglePaneButton"]');
+  }
+
+  async clickMenuBtn() {
+    await this.menuBtn.click();
+  }
+
+  get engineerModeBtn() {
+    return $('//*[@AutomationId="Scientific"]');
+  }
+
+  async clickEngineerMode() {
+    await this.engineerModeBtn.click();
+  }
 }
 
 module.exports = new StandartCalculator();
