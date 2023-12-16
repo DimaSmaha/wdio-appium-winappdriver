@@ -7,5 +7,6 @@ describe("Add Numbers", () => {
     await standartCalculator.clickNumberBtn(4);
     await standartCalculator.clickEqualBtn();
     expect(await standartCalculator.resultValue).toHaveText("Дисплей: 11");
+    expect(await standartCalculator.resultValue).toBeDisplayed();
   });
 });
