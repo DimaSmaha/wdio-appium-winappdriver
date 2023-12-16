@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "npx wdio run wdio.conf.js",
-    "test-cucumber": "npx wdio run wdio.cucumber.conf.js"
+    "test-cucumber": "npx wdio run wdio.cucumber.conf.js",
+    "test-real-app": "npx wdio run wdio.real.app.conf.js"
   },
   "author": "",
   "license": "ISC",
