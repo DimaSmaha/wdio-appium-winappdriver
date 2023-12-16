@@ -26,7 +26,7 @@ exports.config = {
   // then the current working directory is where your `package.json` resides, so `wdio`
   // will be called from there.
   //
-  specs: ["./test-app/specs/**/*.js"],
+  specs: ["./test-app/specs/**/*.uni.js"],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -61,7 +61,7 @@ exports.config = {
       //Get-StartApps| Select-String  "your app name"
       //For native windows app you can directly give the exe location
       //youcan also pass exe
-      "appium:app": "J:/file_recovery.exe",
+      "appium:app": "J:/Uninstall Tool/UninstallTool.exe",
       //   "appium:app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
     },
   ],
