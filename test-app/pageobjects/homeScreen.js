@@ -7,12 +7,9 @@ class HomeScreen {
     return $("[name='" + elementName + "']");
   }
 
-  // get aboutBtn() {
-  //   return $(`//*[@Name='"Про"']`);
-  // }
-
   get aboutBtn() {
-    return $("[name='Про']");
+    // return $(`//Button[@Name="Про"]`);
+    return $(`//*[@Name="About"]`);
   }
 
   async clickAboutBtn() {
@@ -44,8 +41,9 @@ class HomeScreen {
   }
 
   get searchInput() {
-    return $("[class name='TLabeledEdit']");
+    return $(`//*[@ClassName="TLabeledEdit"]`);
   }
+
   async typeSearchInput(input) {
     await this.searchInput.type(input);
   }
