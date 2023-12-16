@@ -40,6 +40,10 @@ class HomeScreen {
   get dutchLanguage() {
     return $(`//*[@Name="Danish (Dansk)"]`);
   }
+
+  get firstApp() {
+    return $('//*[@RuntimeId="2A.3B048C.4.0.0"]'); //always random and not stable
+  }
 }
 
 module.exports = new HomeScreen();
